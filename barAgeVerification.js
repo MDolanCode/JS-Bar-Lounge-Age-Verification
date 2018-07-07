@@ -1,5 +1,6 @@
 //Bar Lounge Age Verification
-var age = prompt("What is your age?")
+var age = Number(prompt("What is your age?"))
+
 
 if (age < 18) {
   console.log("Sorry, you are not old enough to enter the venue");
@@ -13,13 +14,13 @@ else {
   console.log("Come on in. You can drink.");
 }
 
-//if age is negative print error message
-if (age <= -1) {
-  console.log("Error Message");
+//if age is negative print "Come back once your out of the womb!"
+if (age < 0) {
+  console.log("Come back once you're out of the womb!");
 }
 
 //if age is 21 print "happy 21st birthday!"
-if (age == 21) {
+if (age === 21) {
    console.log("Happy 21st Birthday!");
  }
 
